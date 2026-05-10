@@ -28,7 +28,7 @@ def send_greeting(message):
 
 @bot.message_handler(commands=['photo'])
 def send_photo(message):
-    photo = open('/Users/azamatziyoev/Documents/unitishka/ATG/Assets/Scripts/pe lvl3/gifa.png', 'rb')
+    photo = open('YOURPHOTO.png', 'rb')
     bot.send_photo(message.chat.id, photo)
     
 @bot.message_handler(commands=['keyboard'])
